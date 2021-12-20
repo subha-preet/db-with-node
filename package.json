@@ -1,0 +1,30 @@
+{
+    "name": "app",
+    "version": "1.0.0",
+    "description": "sql and mongo db",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/subha-preet/db-with-node.git"
+    },
+    "author": "Subhapreet Kaur Rajwans",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/subha-preet/db-with-node/issues"
+    },
+    "homepage": "https://github.com/subha-preet/db-with-node#readme",
+    "dependencies": {
+        "bluebird": "^3.7.2",
+        "config": "^3.3.6",
+        "dotenv": "^10.0.0",
+        "ejs": "^3.1.6",
+        "errorhandler": "^1.5.1",
+        "express": "^4.17.1",
+        "mysql": "^2.18.1",
+        "nodemon": "^2.0.15"
+    }
+}
