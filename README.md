@@ -1,9 +1,8 @@
 # db-with-node
 
+Istallation
 --
- Installation
---
--- --------------------------------------------------------------------------------------------------------------------------------
+
 By using npm (the recommended way):
 
 clone the repo and run 
@@ -11,7 +10,7 @@ clone the repo and run
 npm install 
 
 -- And all the dependies will be installed to your system.
--- --------------------------------------------------------------------------------------------------------------------------------
+
 For the data base:
 --
  phpMyAdmin SQL Dump
