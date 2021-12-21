@@ -13,10 +13,11 @@ And all the dependies will be installed to your system.
 
 For the data base:
 --
- phpMyAdmin SQL Dump
- version 5.1.1
---
- PHP Version: 8.0.12
+
+phpMyAdmin SQL Dump
+version 5.1.1
+PHP Version: 8.0.12
+
 --
 -- Database: `collagemng`
 --
