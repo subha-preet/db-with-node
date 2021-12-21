@@ -1,22 +1,23 @@
 # db-with-node
 
 --
--- Installation
+ Installation
 --
 -- --------------------------------------------------------------------------------------------------------------------------------
 By using npm (the recommended way):
 
--- clone the repo and run 
+clone the repo and run 
 
 npm install 
 
 -- And all the dependies will be installed to your system.
 -- --------------------------------------------------------------------------------------------------------------------------------
 For the data base:
--- phpMyAdmin SQL Dump
--- version 5.1.1
 --
--- PHP Version: 8.0.12
+ phpMyAdmin SQL Dump
+ version 5.1.1
+--
+ PHP Version: 8.0.12
 --
 -- Database: `collagemng`
 --
