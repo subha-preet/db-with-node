@@ -1,8 +1,7 @@
 # db-with-node
 -- --------------------------------------------------------------------------------------------------------------
---
 Istallation
-
+--
 By using npm (the recommended way):
 
 clone the repo and run 
