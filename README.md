@@ -22,7 +22,6 @@ PHP Version: 8.0.12
 -- Database: `collagemng`
 --
 
--- --------------------------------------------------------
 
 --
 -- Table structure for table `courses`
