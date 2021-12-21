@@ -3,12 +3,14 @@
 // const userRoutes = require('./routes/user');
 
 const express = require('express');
+const db = require('./../util/database');
 const path = require('path');
 
 const errorController = require('./../modules/controllers/error');
 const adminRoutes = require('./../modules/routes/admin');
 const shopRoutes = require('./../modules/routes/shop');
 const userRoutes = require('./../modules/routes/user');
+
 
 app.set('view engine', 'ejs');
 app.set('views', './modules/views');
