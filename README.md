@@ -1,13 +1,17 @@
 # db-with-node
-Installation
-----------------------------------------------------------------------------------------------------------------------------------
+
+--
+-- Installation
+--
+-- --------------------------------------------------------------------------------------------------------------------------------
 By using npm (the recommended way):
+
 -- clone the repo and run 
 
 npm install 
 
---And all the dependies will be installed to your system.
-----------------------------------------------------------------------------------------------------------------------------------
+-- And all the dependies will be installed to your system.
+-- --------------------------------------------------------------------------------------------------------------------------------
 For the data base:
 -- phpMyAdmin SQL Dump
 -- version 5.1.1
@@ -111,10 +115,10 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`student_id`, `first_name`, `last_name`, `email`, `phone`, `gender`, `dob`, `address`, `state`, `country`, `pincode`) VALUES
-(1, 'Subhapreet', 'Rajwans', 'subhapreet@growthnatives.com', '9815555817', 'female', '1999-12-18', '#2901 sector 37-C ', 'chandigarh', 'india', '160036'),
+(1, 'Subhapreet', 'Rajwans', 'subhapreetkaur@growthnatives.com', '9813333817', 'female', '1999-12-18', '#2e1 sector 37 ', 'chandigarh', 'india', '160034'),
 (2, 'Kamal', 'Kashyab', 'kamal.kashyab@growthnatives.com', '9423443537', 'male', '1997-11-28', '234 abc ambala city', 'Haryana', 'india', '134500'),
-(3, 'Abhijot', 'Rajwans', 'abhijot@growthnatives.com', '9816555817', 'female', '2005-10-10', '#2901 sector 37-C ', 'chandigarh', 'india', '160036'),
-(4, 'Subha', 'Rajwans', 'subha@growthnatives.com', '9814555817', 'female', '2005-10-10', '#2901 sector 37-C ', 'chandigarh', 'india', '160036');
+(3, 'Abhijot', 'Rajwans', 'abhijot@growthnatives.com', '9816553817', 'female', '2005-10-10', '#2r1 sector 37 ', 'chandigarh', 'india', '160035'),
+(4, 'Subha', 'Rajwans', 'subha@growthnatives.com', '9814535817', 'female', '2005-10-10', '#2y1 sector 37 ', 'chandigarh', 'india', '160036');
 
 -- --------------------------------------------------------
 
