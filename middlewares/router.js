@@ -8,9 +8,9 @@ const path = require('path');
 
 const errorController = require('./../modules/controllers/error');
 const adminRoutes = require('./../modules/routes/admin');
-const shopRoutes = require('./../modules/routes/shop');
+const studentRoutes = require('./../modules/routes/student');
 const userRoutes = require('./../modules/routes/user');
-
+const teacherRoutes = require('./../modules/routes/teacher');
 
 app.set('view engine', 'ejs');
 app.set('views', './modules/views');
@@ -21,6 +21,7 @@ app.set('view options', {
 app.use(express.static(path.join(__dirname, './../public')));
 
 app.use('/admin', adminRoutes);
-app.use(shopRoutes);
+app.use('/students', studentRoutes);
 app.use(userRoutes);
+app.use('/teachers', teacherRoutes);
 app.use(errorController.get404);

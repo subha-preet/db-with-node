@@ -1,11 +1,11 @@
 const path = require('path');
 const express = require('express');
 
-const shopController = require('./../controllers/shop');
+const teacherController = require('../controllers/teacher');
 
 const router = express.Router();
 
-router.get('/', shopController.getIndex);
+router.get('/', teacherController.getTeacher);
 
 
 module.exports = router;

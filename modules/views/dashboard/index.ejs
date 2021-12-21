@@ -1,0 +1,35 @@
+<%- include('../includes/head.ejs') %>
+    <!-- <link rel="stylesheet" href="/css/product.css"> -->
+    </head>
+
+    <body>
+        <%- include('../includes/navbar.ejs') %>
+            <main>
+
+                <div class="grid">
+
+                    <div class="card product-item m-3">
+                        <header class="card__header m-2">
+                            <h2 class="product__title">
+                                Students
+                            </h2>
+                        </header>
+                        <div class="card__actions m-3">
+                            <a href="/students" class="btn  btn-primary">Show</a>
+                        </div>
+                    </div>
+
+                    <div class="card product-item m-3">
+                        <header class="card__header m-2">
+                            <h2 class="product__title">
+                                Teachers
+                            </h2>
+                        </header>
+                        <div class="card__actions m-3">
+                            <a href="/teachers" class="btn  btn-primary">Show</a>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <%- include('../includes/footer.ejs') %>

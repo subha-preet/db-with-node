@@ -8,16 +8,16 @@
             <main>
                 <% if (studs.length > 0) { %>
                     <div class="grid">
-                        <% for (let student of studs) { %>
+                        <% for (let person of studs) { %>
                             <article class="card product-item m-3">
                                 <header class="card__header m-2">
                                     <h1 class="product__title">
-                                        <%= student.first_name %>
-                                            <%= student.last_name %>
+                                        <%= person.first_name  || person.name %>
+                                            <%= person.last_name %>
                                     </h1>
                                 </header>
                                 <div class="card__actions m-3">
-                                    <a href="/student/<%= student.student_id %>" class="btn  btn-primary"> More Details</a>
+                                    <a href="/student?id=<%= person.student_id  || person.teacher_id %>" class="btn  btn-primary"> More Details</a>
                                 </div>
                             </article>
                             <% } %>
