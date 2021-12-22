@@ -19,9 +19,6 @@ exports.getParticularStudentData = (req, res, next) => {
     const prodId = req.query.student_id;
     Student.fetchAllStudentData(prodId)
         .then(([rows, feildData]) => {
-
-            console.log(rows)
-
             res.render('profile/student', {
                 student: rows,
                 pageTitle: 'Student',

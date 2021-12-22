@@ -12,6 +12,7 @@ const errorController = require('../modules/error-controller');
 const studentRoutes = require('./../modules/students');
 const userRoutes = require('./../modules/login-signup');
 const teacherRoutes = require('./../modules/teachers');
+const dashboardRouter = require('./../modules');
 
 app.use(morgan('dev'));
 
@@ -24,6 +25,7 @@ app.set('view options', {
 app.use(express.static(path.join(__dirname, './../public')));
 
 app.use('/students', studentRoutes);
+app.use(dashboardRouter);
 app.use(userRoutes);
 app.use('/teachers', teacherRoutes);
 app.use(errorController.get404);
