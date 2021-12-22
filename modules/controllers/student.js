@@ -15,12 +15,17 @@ exports.getStudents = (req, res, next) => {
 };
 
 exports.getParticularStudentData = (req, res, next) => {
-    Student.fetchAllStudentsData()
+    console.log("=======================", req.query)
+    const prodId = req.query.student_id;
+    Student.fetchAllStudentData(prodId)
         .then(([rows, feildData]) => {
-            res.render('dashboard/listing', {
+
+            console.log(rows)
+
+            res.render('dashboard/student', {
                 studs: rows,
-                pageTitle: 'Students',
-                path: '/listing'
+                pageTitle: 'Student',
+                path: '/feildData'
             });
         })
         .catch(err => {
