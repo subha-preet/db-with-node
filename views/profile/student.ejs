@@ -1,0 +1,36 @@
+<%- include('../includes/head.ejs') %>
+    <!-- <link rel="stylesheet" href="/css/product.css"> -->
+    </head>
+
+    <body>
+
+        <%- include('../includes/navbar.ejs') %>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>City</th>
+                </tr>
+                <% student.forEach((info)=>{%>
+                    <tr>
+                        <td>
+                            <%= info.student_id %>
+                        </td>
+                        <td>
+                            <%= info.first_name %>
+                        </td>
+                        <td>
+                            <%= info.last_name %>
+                        </td>
+                        <td>
+                            <%= info.email %>
+                        </td>
+                        <td>
+                            <%= info.phone %>
+                        </td>
+                    </tr>
+                    <% }) %>
+            </table>

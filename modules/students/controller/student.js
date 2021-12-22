@@ -3,7 +3,7 @@ const Student = require('./../services');
 exports.getStudents = (req, res, next) => {
     Student.fetchStudents()
         .then(([rows, feildData]) => {
-            res.render('dashboard/listing', {
+            res.render('listing/listing', {
                 studs: rows,
                 pageTitle: 'Students',
                 path: '/listing'
@@ -22,8 +22,8 @@ exports.getParticularStudentData = (req, res, next) => {
 
             console.log(rows)
 
-            res.render('dashboard/student', {
-                studs: rows,
+            res.render('profile/student', {
+                student: rows,
                 pageTitle: 'Student',
                 path: '/feildData'
             });
