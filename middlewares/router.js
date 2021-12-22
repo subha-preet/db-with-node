@@ -17,7 +17,7 @@ const teacherRoutes = require('./../modules/routes/teacher');
 app.use(morgan('dev'));
 
 app.set('view engine', 'ejs');
-app.set('views', './modules/views');
+app.set('views', './views');
 app.set('view options', {
     layout: false
 });
