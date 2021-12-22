@@ -8,11 +8,10 @@ const path = require('path');
 const morgan = require('morgan');
 
 
-const errorController = require('./../modules/controllers/error');
-const adminRoutes = require('./../modules/routes/admin');
-const studentRoutes = require('./../modules/routes/student');
-const userRoutes = require('./../modules/routes/user');
-const teacherRoutes = require('./../modules/routes/teacher');
+const errorController = require('../modules/error-controller');
+const studentRoutes = require('./../modules/students');
+const userRoutes = require('./../modules/login-signup');
+const teacherRoutes = require('./../modules/teachers');
 
 app.use(morgan('dev'));
 
@@ -24,7 +23,6 @@ app.set('view options', {
 
 app.use(express.static(path.join(__dirname, './../public')));
 
-app.use('/admin', adminRoutes);
 app.use('/students', studentRoutes);
 app.use(userRoutes);
 app.use('/teachers', teacherRoutes);

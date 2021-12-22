@@ -1,4 +1,4 @@
-const Student = require('../index');
+const Student = require('./../services');
 
 exports.getStudents = (req, res, next) => {
     Student.fetchStudents()
